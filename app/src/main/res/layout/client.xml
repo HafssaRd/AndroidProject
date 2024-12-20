@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phar"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                tools:ignore="MissingConstraints"
+                app:layout_editor_absoluteX="120dp"
+                android:layout_marginTop="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="Map"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"
+                tools:ignore="MissingConstraints"
+                app:layout_editor_absoluteX="175dp"
+                app:layout_editor_absoluteY="45dp"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_editor_absoluteY="150dp"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Welcome Dear Custmor!"
+        android:textColor="#212121"
+        app:layout_editor_absoluteX="90dp"
+        app:layout_editor_absoluteY="170dp"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_editor_absoluteY="250dp"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/pharmacie_list"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:src="@drawable/espace_client"
+            android:contentDescription="Espace Client"/>
+
+        <Button
+            android:id="@+id/buttonpharmacie_list"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@id/pharmacie_list"
+            android:text="Pharmacies" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_editor_absoluteY="400dp"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:id="@+id/permanence"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:src="@drawable/espace_client"
+            android:contentDescription="Espace Client"/>
+
+        <Button
+            android:id="@+id/button_permanence"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:layout_marginTop="55dp"
+            android:layout_toRightOf="@id/permanence"
+            android:text="Pharmacies de garde" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_retour"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#212121"
+        android:layout_marginTop="55dp"
+        android:text="Retour"
+        app:layout_editor_absoluteX="105dp"
+        app:layout_editor_absoluteY="650dp"
+        tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

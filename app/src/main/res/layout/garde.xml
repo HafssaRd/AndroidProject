@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/garde"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phar"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                tools:ignore="MissingConstraints"
+                app:layout_editor_absoluteX="120dp"
+                android:layout_marginTop="45dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:text="Map"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#8BC34A"
+                tools:ignore="MissingConstraints"
+                app:layout_editor_absoluteX="175dp"
+                app:layout_editor_absoluteY="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textStyle="bold|italic"
+                android:text="Pharmacies de garde"
+                android:textColor="#212121"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textColor="#212121"
+                android:hint="Chercher un pharmacie"
+                android:drawableRight="@drawable/baseline_search_24"
+                android:layout_marginTop="15dp"
+                tools:ignore="MissingConstraints"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:layout_editor_absoluteY="175dp"
+                tools:context=".MainActivity"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_bou"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:text="Phar. Boutalamine:"
+                    android:textColor="#212121"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button_bou"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/txt_bou"
+                    android:text="Accéder" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FFFFFF"
+                app:layout_editor_absoluteY="265dp"
+                tools:context=".MainActivity"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_mly"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:text="Phar. Mly Ali Cherif:"
+                    android:textColor="#212121"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button_mly"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@id/txt_mly"
+                    android:text="Accéder" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FFFFFF"
+                app:layout_editor_absoluteY="355dp"
+                tools:context=".MainActivity"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_rich"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:text="Phar. Rich:"
+                    android:textColor="#212121"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button_rich"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toRightOf="@id/txt_rich"
+                    android:text="Accéder" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FFFFFF"
+                app:layout_editor_absoluteY="445dp"
+                tools:context=".MainActivity"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_hop"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:text="Phar. Hopitale:"
+                    android:textColor="#212121"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button_hop"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="73dp"
+                    android:layout_toRightOf="@id/txt_hop"
+                    android:text="Accéder" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="#FFFFFF"
+                app:layout_editor_absoluteY="535dp"
+                tools:context=".MainActivity"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/txt_al"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:text="Pharmacie AlFath"
+                    android:textColor="#212121"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button_ain"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@id/txt_al"
+                    android:text="Accéder" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_retour"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#212121"
+                android:layout_marginTop="30dp"
+                android:text="Retour"
+                app:layout_editor_absoluteX="105dp"
+                app:layout_editor_absoluteY="650dp"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

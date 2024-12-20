@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        tools:ignore="MissingConstraints"
+        app:layout_editor_absoluteX="120dp"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Map"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#8BC34A"
+        tools:ignore="MissingConstraints"
+        app:layout_editor_absoluteX="175dp"
+        app:layout_editor_absoluteY="45dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_editor_absoluteY="110dp"
+        tools:context=".MainActivity"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:text="Welcome to PharMap!"
+            android:layout_gravity="center"
+
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We can help you to find the nearest pharmacy."
+            android:layout_gravity="center"
+             />
+     <ImageView
+     android:id="@+id/client_image"
+     android:layout_width="190dp"
+     android:layout_height="150dp"
+     android:layout_gravity="center"
+     android:layout_marginTop="15dp"
+     android:src="@drawable/espace_client"
+     android:contentDescription="Espace Client"/>
+
+     <Button
+     android:id="@+id/buttonClient"
+     android:layout_width="200dp"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:layout_marginTop="15dp"
+     android:backgroundTint="#8BC34A"
+     android:text="Client space" />
+
+
+     <ImageView
+            android:id="@+id/pharmacie_image"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:contentDescription="espace_phar"
+            android:src="@drawable/espace_phar" />
+        <Button
+            android:id="@+id/buttonPharmacie"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#8BC34A"
+            android:text="Pharmacie space" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

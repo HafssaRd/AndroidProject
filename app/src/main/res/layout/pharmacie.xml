@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pharmacie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        tools:ignore="MissingConstraints"
+        app:layout_editor_absoluteX="120dp"
+        android:layout_marginTop="45dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Map"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#8BC34A"
+        tools:ignore="MissingConstraints"
+        app:layout_editor_absoluteX="175dp"
+        app:layout_editor_absoluteY="45dp"/>
+</LinearLayout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginTop="30dp"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:padding="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informations  de la pharmacie"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_gravity="center"
+        android:paddingBottom="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrer le nom de la pharmacie:"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="#212121"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPharmacyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp"
+        android:background="@drawable/border"
+        android:hint="Nom de la pharmacie"
+        android:layout_marginBottom="16dp"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrer le numéro du téléphone:"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="#212121"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp"
+        android:background="@drawable/border"
+        android:hint="Numéro de téléphone"
+        android:inputType="phone"/>
+
+    <Switch
+        android:id="@+id/switchOnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pharmacie de garde"/>
+
+    <Button
+        android:id="@+id/buttonSelectLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Sélectionner la localisation"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*Localisation : Non sélectionnée"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="Enregistrer"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+    <Button
+        android:id="@+id/button_retour"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#212121"
+        android:layout_marginTop="30dp"
+        android:text="Retour"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
